@@ -5,7 +5,7 @@ MAIN_REPO="https://gitlab.hrz.tu-chemnitz.de/vsr/edu/planspiel/ws2425/group10-he
 FOLDER="portfolio"
 BRANCH="development"
 TEMP_DIR="/tmp/portfolio"
-TARGET_REPO="https://github.com/mdhafizur/hexashield.git"
+TARGET_REPO="https://github.com/mdhafizur/hexalayer.git"
 TARGET_BRANCH="main"
 LIVE_REPO_DIR="/tmp/live-repo"
 
