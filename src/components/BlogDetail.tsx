@@ -26,7 +26,7 @@ const BlogDetail: React.FC = () => {
   useEffect(() => {
     const fetchMarkdown = async () => {
       try {
-        const response = await fetch(`https://hexalayer.vercel.app/blogs/week-${blogId}.md`);
+        const response = await fetch(`/blogs/week-${blogId}.md`);
         if (!response.ok) throw new Error("Failed to load Markdown file");
         const text = await response.text();
         const { content } = matter(text); // Extract content without metadata
