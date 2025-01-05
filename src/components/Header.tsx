@@ -74,7 +74,7 @@ const Header: React.FC = () => {
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
           {/* Logo and Title */}
           <Box sx={{ display: "flex", alignItems: "center" }}>
-            <RouterLink to="/" style={{ textDecoration: "none", display: 'flex', alignItems: 'center' }}>
+            <RouterLink to="/" style={{ textDecoration: "none", display: "flex", alignItems: "center" }}>
               <img src={HexaLayer} alt="Logo" style={{ height: "40px", marginRight: "8px" }} />
               <Typography variant="h6" color={theme.palette.text.primary}>
                 Hexalayer
@@ -108,6 +108,25 @@ const Header: React.FC = () => {
                     {section.replace("-", " ").toUpperCase()}
                   </Typography>
                 ))}
+                <RouterLink to="/features" style={{ textDecoration: "none" }}>
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      color: theme.palette.text.primary,
+                      transition: "color 0.3s, transform 0.3s",
+                      "&:hover": {
+                        color: theme.palette.primary.main,
+                        transform: "scale(1.1)",
+                      },
+                      "&:active": {
+                        color: theme.palette.primary.dark,
+                        transform: "scale(0.95)",
+                      },
+                    }}
+                  >
+                    OUR OFFERING
+                  </Typography>
+                </RouterLink>
                 <RouterLink to="/blogs" style={{ textDecoration: "none" }}>
                   <Typography
                     variant="body1"
@@ -192,6 +211,22 @@ const Header: React.FC = () => {
               >
                 <ListItemText
                   primary="BLOG"
+                  sx={{
+                    color: theme.palette.primary.contrastText,
+                    "&:hover": {
+                      color: theme.palette.secondary.light,
+                    },
+                  }}
+                />
+              </ListItem>
+              <ListItem
+                component={RouterLink}
+                to="/Features"
+                onClick={closeMenu}
+                sx={{ cursor: "pointer", textAlign: "center" }}
+              >
+                <ListItemText
+                  primary="FEATURES"
                   sx={{
                     color: theme.palette.primary.contrastText,
                     "&:hover": {
