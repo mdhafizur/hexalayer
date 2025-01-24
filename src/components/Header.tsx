@@ -143,7 +143,7 @@ const Header: React.FC = () => {
                       },
                     }}
                   >
-                    BLOG
+                    BLOGS
                   </Typography>
                 </RouterLink>
               </Box>
@@ -210,7 +210,7 @@ const Header: React.FC = () => {
                 sx={{ cursor: "pointer", textAlign: "center" }}
               >
                 <ListItemText
-                  primary="BLOG"
+                  primary="BLOGS"
                   sx={{
                     color: theme.palette.primary.contrastText,
                     "&:hover": {

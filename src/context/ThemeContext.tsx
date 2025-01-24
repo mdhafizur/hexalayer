@@ -20,7 +20,7 @@ export const ThemeContextProvider: React.FC<{ children: React.ReactNode }> = ({ 
   const [mode, setMode] = useState<"light" | "dark">(() => {
     // Retrieve the saved theme mode from localStorage
     const savedMode = localStorage.getItem("themeMode");
-    return savedMode === "dark" ? "dark" : "light";
+    return savedMode === "light" ? "light" : "dark";
   });
 
   useEffect(() => {
