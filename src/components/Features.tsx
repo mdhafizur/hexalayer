@@ -11,7 +11,6 @@ import {
     AlertTriangle,
     type LucideIcon,
 } from 'lucide-react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 
 // AnimatedFeatureCard Component
 const AnimatedFeatureCard = ({ icon: Icon, title, description }: { icon: LucideIcon; title: string; description: string }) => {
@@ -84,7 +83,6 @@ const features = [
 // FeaturesPage Component
 const Features = () => {
     const theme = useTheme();
-    const navigate = useNavigate(); // Use navigate for routing
 
     return (
         <Box
