@@ -162,7 +162,7 @@ const Features = () => {
                     <Button
                         variant="contained"
                         size="large"
-                        onClick={() => navigate('../contact')} // Navigate to contact form
+                        onClick={() => window.location.href = "https://hexashield.vercel.app/login"} // Navigate to login page
                         sx={{
                             backgroundColor: 'primary.main',
                             padding: '12px 32px',
